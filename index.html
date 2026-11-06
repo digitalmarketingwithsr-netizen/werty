@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trading Education Community</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+.page-container {
+    max-width: 500px;
+    min-height: 100vh;
+    margin: 20px auto;
+    padding: 23px 16px;
+    border: 2px solid #f0aaff;
+    text-align: center;
+    background: #ffffff;
+}
+
+/* Profile Image */
+.profile {
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00c9d9;
+    box-shadow: 0 0 25px rgba(0, 190, 220, 0.35);
+    margin: 0 auto;
+    display: block;
+}
+
+/* Host */
+.host {
+    margin-top: 68px;
+    color: #8999b4;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Heading */
+.heading {
+    margin-top: 34px;
+    color: #11c9e9;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Telegram Button */
+.telegram-btn {
+    margin-top: 65px;
+    width: 100%;
+    min-height: 64px;
+    border-radius: 17px;
+    background: linear-gradient(110deg, #10a5e7, #0089c9);
+    box-shadow: 0 5px 22px rgba(0, 150, 210, 0.35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.telegram-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 28px rgba(0, 150, 210, 0.5);
+}
+
+.telegram-btn svg {
+    width: 23px;
+    height: 23px;
+    fill: white;
+}
+
+/* Disclaimer */
+.small-text {
+    color: #b9c9df;
+    font-size: 13px;
+    line-height: 23px;
+    margin: 19px 0 31px;
+}
+
+/* Feature Cards */
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.feature {
+    background: #172438;
+    border: 1px solid #31435e;
+    min-height: 64px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 15px 21px;
+    gap: 16px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+}
+
+.dot {
+    width: 11px;
+    height: 11px;
+    min-width: 11px;
+    border-radius: 50%;
+    background: #09c58d;
+    box-shadow: 0 0 10px rgba(9,197,141,0.5);
+}
+
+.feature p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    margin-top: 39px;
+    padding-top: 23px;
+    border-top: 1px solid #27354c;
+    color: #9aabc4;
+    font-size: 12px;
+    line-height: 21px;
+}
+
+/* Mobile Responsive */
+@media(max-width: 520px) {
+    .page-container {
+        margin: 0 auto;
+        width: 100%;
+        border-left: 2px solid #f0aaff;
+        border-right: 2px solid #f0aaff;
+    }
+
+    .host {
+        margin-top: 65px;
+    }
+
+    .heading {
+        font-size: 23px;
+    }
+
+    .telegram-btn {
+        margin-top: 60px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="page-container">
+
+    <!-- Profile Image -->
+    <img
+        src="YOUR-PROFILE-IMAGE-URL"
+        alt="Community Host"
+        class="profile"
+    >
+
+    <!-- Host Title -->
+    <div class="host">COMMUNITY HOST</div>
+
+    <!-- Main Heading -->
+    <h1 class="heading">Trading Education</h1>
+
+    <!-- Telegram Button -->
+    <a
+        href="YOUR-TELEGRAM-LINK"
+        class="telegram-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        <svg viewBox="0 0 24 24">
+            <path d="M21.5 3.5L18.2 20c-.25 1.17-.94 1.46-1.9.91l-5.25-3.87-2.53 2.44c-.28.28-.52.52-1.07.52l.38-5.34 9.72-8.78c.42-.38-.09-.59-.65-.21L4.9 13.22l-5.16-1.61c-1.12-.35-1.14-1.12.23-1.65L20.1 2.4c.94-.34 1.76.23 1.4 1.1z" transform="translate(1 0) scale(.95)"/>
+        </svg>
+        JOIN TELEGRAM
+    </a>
+
+    <!-- Disclaimer -->
+    <p class="small-text">
+        Free educational community • No investment advice •
+        Trading involves risk
+    </p>
+
+    <!-- Features -->
+    <div class="features">
+
+        <div class="feature">
+            <span class="dot"></span>
+            <p>Chart analysis &amp; market structure basics</p>
+        </div>
+
+        <div class="feature">
+            <span class="dot"></span>
+            <p>Risk management principles explained simply</p>
+        </div>
+
+        <div class="feature">
+            <span class="dot"></span>
+            <p>Trading psychology &amp; structured learning</p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Educational information only. This community does
+        not provide personalized investment advice.
+        Trading involves financial risk. Always do your
+        own research before making financial decisions.
+    </div>
+
+</div>
+
+</body>
+</html>
